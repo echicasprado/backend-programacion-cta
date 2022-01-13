@@ -1,0 +1,27 @@
+{
+  "name": "backendcta",
+  "version": "1.0.0",
+  "description": "Servidor del proyecto de Programacion CTA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: No hay test\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echicasprado/backend-programacion-cta.git"
+  },
+  "author": "Ever Chicas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echicasprado/backend-programacion-cta/issues"
+  },
+  "homepage": "https://github.com/echicasprado/backend-programacion-cta#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}
