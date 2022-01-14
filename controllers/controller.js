@@ -22,4 +22,13 @@ exports.postNuevoEstudiante = function(req,res){
     })
 }
 
+exports.getDetalleEstudiante = function(req,res){
+    let {id} = req.body;
+    Estudiante.findById(id,function(err,result){
+        if(err){
+            res.send(500,err.message);
+        }
+        res.json(result);
+    });
+}
 
