@@ -9,3 +9,17 @@ exports.getEstudiantes = function(req,res){
         res.json(estudiantes);
     });
 };
+
+exports.getNuevoEstudiante = function(req,res){
+    res.send(`Error: utilizar metodo post`);
+}
+
+exports.postNuevoEstudiante = function(req,res){
+    let nuevoEstudiante = new Estudiante(req.body);
+    nuevoEstudiante.save(function(err,estudiante){
+        if(err) res.send(err);
+        res.json(estudiante);
+    })
+}
+
+
